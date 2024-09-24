@@ -90,5 +90,6 @@ spec:
   type: LoadBalancer
   ports:
     - port: 8080
+  sessionAffinity: ClientIP 
   selector:
     app: jenkins
